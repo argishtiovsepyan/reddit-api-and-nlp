@@ -1,12 +1,12 @@
 ## "AskScience" or "ExplainLikeImFive"
 
-### Optimizing Access to Information by Differentiating Scientific and Simplified Questions on Reddit
-
 ## Reddit Data Acquistion, NLP, and Classification Modeling
 
 <p align="center">
 <img src= "images/Poster.jpg">
 </p>
+
+#### Optimizing Access to Information by Differentiating Scientific and Simplified Questions on Reddit
 
 I am classifying Reddit posts as either scientific explanations from "AskScience" or simplified explanations from "explainlikeimfive" based on the language used in the posts. By discerning complex and layman questions, these models aim to enhance the user experience by facilitating access to information in users' preferred level of detail. This differentiation will benefit businesses by enabling personalized content delivery and improved customer support based on users' information needs and understanding.
 
