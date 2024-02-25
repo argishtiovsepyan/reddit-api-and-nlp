@@ -5,8 +5,10 @@
 <img src= "images/Poster.jpg">
 </p>
 
-I am classifying Reddit posts as either scientific explanations from "AskScience" or simplified explanations from "explainlikeimfive" based on the language used in the posts. By discerning complex and layman questions, these models aim to enhance the user experience by facilitating access to information in users' preferred level of detail. This differentiation will benefit businesses by enabling personalized content delivery and improved customer support based on users' information needs and understanding.
+# **Introduction**
+Given the numerous parallels observed between the discussions in the subreddits AskScience and ExplainLikeImFive, can the distinction between the two be reliably classified on unseen data? Furthermore, does this classification accuracy persist even when technical terms, such as specific scientific concepts and jargon commonly used in both subreddits, are excluded from the model? I am classifying Reddit posts as either scientific explanations from "AskScience" or simplified explanations from "explainlikeimfive" based on the language used in the posts. By discerning complex and layman questions, these models aim to enhance the user experience by facilitating access to information in users' preferred level of detail. This differentiation will benefit businesses by enabling personalized content delivery and improved customer support based on users' information needs and understanding.
 
+# **Data Dictionary**
 
 | Column Name       | Type    | Description                                         |
 |-------------------|---------|---------------------------------------------------- |
