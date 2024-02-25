@@ -1,8 +1,5 @@
+# **Subreddit Classifier:**
 ## "AskScience" or "ExplainLikeImFive"
-
-### Optimizing Access to Information by Differentiating Scientific and Simplified Questions on Reddit
-
-## Reddit Data Acquistion, NLP, and Classification Modeling
 
 <p align="center">
 <img src= "images/Poster.jpg">
