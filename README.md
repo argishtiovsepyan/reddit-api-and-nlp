@@ -6,7 +6,7 @@
 </p>
 
 # **Introduction**
-Given the numerous parallels observed between the discussions in the subreddits AskScience and ExplainLikeImFive, can the distinction between the two be reliably classified on unseen data? Furthermore, does this classification accuracy persist even when technical terms, such as specific scientific concepts and jargon commonly used in both subreddits, are excluded from the model? I am classifying Reddit posts as either scientific explanations from "AskScience" or simplified explanations from "explainlikeimfive" based on the language used in the posts. By discerning complex and layman questions, these models aim to enhance the user experience by facilitating access to information in users' preferred level of detail. This differentiation will benefit businesses by enabling personalized content delivery and improved customer support based on users' information needs and understanding.
+Given the numerous parallels observed between the discussions in the subreddits AskScience and ExplainLikeImFive, can the distinction between the two be reliably classified on unseen data? Furthermore, does this classification accuracy persist even when technical terms, such as specific scientific concepts and jargon commonly used in both subreddits, are excluded from the model? Reddit posts are classified as either scientific explanations from 'AskScience' or simplified explanations from 'ExplainLikeImFive' based on the language used in the posts. By discerning complex and layman questions, these models aim to enhance the user experience by facilitating access to information in users' preferred level of detail. This differentiation will benefit businesses by enabling personalized content delivery and improved customer support based on users' information needs and understanding.
 
 # **Data Dictionary**
 
@@ -24,14 +24,12 @@ Given the numerous parallels observed between the discussions in the subreddits 
 | title_tokens      | object  | The tokenized representation of words in the title. |
 | text_tokens       | object  | The tokenized representation of words in the text.  |
 
+# **Collecting Data and EDA**
+This project utilizes the Python Reddit API Wrapper (PRAW) to extract a comprehensive dataset of Reddit posts from the subreddits 'AskScience' and 'ExplainLikeImFive' (ELIF). The collection process involves retrieving posts over multiple days to ensure a diverse range of content. After acquiring thousands of posts, duplicates are systematically removed, resulting in a clean dataset for analysis. To ensure the dataset's integrity and balance, careful attention is paid to class distribution, mitigating concerns about class imbalance.
 
-#### Executive Summary
+Following data acquisition, a series of preprocessing steps are undertaken to prepare the text data for modeling. This includes removing tags, handling missing text entries, and performing sentiment analysis to gain insights into the emotional tone of the posts. Additionally, tokenization, stemming, lemmatization, and stop-word removal are applied to the title and text columns to streamline the data and improve the model's predictive performance. One notable consideration during preprocessing is the decision to retain the full, unedited post content rather than adding common words to the stop words list. This choice was based on the observation that maintaining contextual information enhances the model's ability to differentiate between complex and layman questions effectively.
 
-This project leverages the Python Reddit API Wrapper (PRAW) to extract a vast collection of Reddit posts, forming the basis for a machine learning model that distinguishes between complex (sourced from 'AskScience') and simple ('ELIF') questions. Thousands of posts were acquired, duplicates removed, and a master dataframe created for modeling purposes. The data obtained is well-balanced, eliminating the concern for class imbalance.
-
-A number of pre-processing steps were carried out, including removing tags, replacing missing texts, and conducting sentiment analysis. Additionally, I performed tokenization, stemming, lemmatization, and stop-word removal on title and text columns to facilitate the model's predictions.
-
-Initially, adding common words to the stop words list was considered. However, it was found that maintaining the full unedited post improved the model's performance, as it retained more contextual information vital for discerning between complex and layman questions.
+# **Modeling**
 
 A variety of machine learning models were explored, including Multinominal Naive Bayes, Random Forest, and Logistic Regression. Through hyperparameter tuning via GridSearchCV, Logistic Regression demonstrated superior performance, particularly with ridge-like regularization.
 
