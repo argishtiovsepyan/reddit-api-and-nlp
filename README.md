@@ -31,7 +31,7 @@ This project utilizes the Python Reddit API Wrapper (PRAW) to extract a comprehe
 Following data acquisition, a series of preprocessing steps are undertaken to prepare the text data for modeling. This includes removing tags, handling missing text entries, and performing sentiment analysis to gain insights into the emotional tone of the posts. Additionally, tokenization, stemming, lemmatization, and stop-word removal are applied to the title and text columns to streamline the data and improve the model's predictive performance. One notable consideration during preprocessing is the decision to retain the full, unedited post content rather than adding common words to the stop words list. This choice was based on the observation that maintaining contextual information enhances the model's ability to differentiate between complex and layman questions effectively.
 
 <p align="center">
-<img src= "images/Common Words Historgram.jpg">
+<img src= "images/Common%20Words%20Histogram.png">
 </p>
 
 Interestingly, there appears to be a preoccupation with time and water evident in both discussion boards. Initially, I intended to include common words in my stop words list. However, after careful consideration and preliminary testing, it appears that keeping the full, unedited post is yielding better results for my model. The objective here is to distinguish between complex and layman questions, and removing stop words is stripping away too much context.
