@@ -50,7 +50,13 @@ A variety of machine learning models were explored, including Multinominal Naive
 | F1-score (class 1)  | 0.92328 |
 | F1-score (class 2)  | 0.91867 |
 
-The final model significantly outperformed the baseline score of 0.5, achieving an impressive accuracy score of 0.92. This suggests a robust ability to balance true positives and false positives effectively, indicating excellent classification potential. The model's ability to discern user input complexity and respond appropriately can prove highly beneficial for businesses aiming to deliver personalized content and customer support.
+The final model demonstrates remarkable performance, surpassing the baseline score of 0.5 with an impressive accuracy of 0.92. Moreover, achieving a ROC AUC score of 0.92 underscores its ability to effectively balance true positives and false positives, signifying strong classification potential.
+
+<p align="center">
+  <img src="images/Test%20Confusion%20Matrix.png" width="740" height="434">
+</p>
+
+Businesses aiming to offer personalized content and customer support can benefit greatly from the model's capability to discern user input complexity and respond accordingly.
 
 # **Future Work**
 For subsequent iterations, there is scope to experiment with other models like KNN, SVM, Gradient Boosting, and Ada Boosting. Inclusion of additional features or combining the title and text columns may also enhance the understanding of full context and improve model performance.
