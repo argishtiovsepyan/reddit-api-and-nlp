@@ -39,6 +39,17 @@ Interestingly, there appears to be a preoccupation with time and water evident i
 # **Modeling**
 A variety of machine learning models were explored, including Multinominal Naive Bayes, Random Forest, and Logistic Regression. Through hyperparameter tuning via GridSearchCV, Logistic Regression demonstrated superior performance, particularly with ridge-like regularization. Key parameters identified were no limit on max features, a minimum document frequency of 1, maximum document frequency of 0.4, n-gram range of (1,3), no stop words, a moderate regularization strength of 1, and using the liblinear solver.
 
+| Metric          | Score   |
+|-----------------|---------|
+| ROC AUC         | 0.92081 |
+| Accuracy        | 0.92104 |
+| Precision (class 1) | 0.91006 |
+| Precision (class 2) | 0.93304 |
+| Recall (class 1)    | 0.93690 |
+| Recall (class 2)    | 0.90473 |
+| F1-score (class 1)  | 0.92328 |
+| F1-score (class 2)  | 0.91867 |
+
 The final model significantly outperformed the baseline score of 0.5, achieving an impressive accuracy score of 0.92. This suggests a robust ability to balance true positives and false positives effectively, indicating excellent classification potential. The model's ability to discern user input complexity and respond appropriately can prove highly beneficial for businesses aiming to deliver personalized content and customer support.
 
 # **Future Work**
